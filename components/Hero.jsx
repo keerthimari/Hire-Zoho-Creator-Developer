@@ -69,32 +69,8 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      {/* Floating Zoho product chips */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' }} className="d-none d-md-block">
-        {zohoProducts.map((p, i) => (
-          <div key={p.name} style={{
-            position: 'absolute',
-            left: `${p.x}%`,
-            top: `${p.y}%`,
-            background: '#fff',
-            border: '1px solid #e8e3dd',
-            borderRadius: 10,
-            padding: '6px 12px',
-            fontSize: '0.74rem',
-            fontFamily: 'Inter,sans-serif',
-            fontWeight: 600,
-            color: '#334155',
-            opacity: 0.7,
-            boxShadow: '0 4px 14px rgba(15,23,42,0.06)',
-            animation: `float-y${(i % 3) ? `-${(i % 3) + 1}` : ''} ${5 + i * 0.6}s ease-in-out infinite`,
-            animationDelay: `${i * 0.4}s`,
-            whiteSpace: 'nowrap',
-          }}>
-            <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: ['#3b82f6','#8b5cf6','#f97316'][i % 3], marginRight: 7, verticalAlign: 'middle' }} />
-            {p.name}
-          </div>
-        ))}
-      </div>
+     
+    
 
       <div className="container position-relative text-center">
         {/* Badge */}
