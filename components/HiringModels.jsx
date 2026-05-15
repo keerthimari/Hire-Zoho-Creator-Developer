@@ -106,7 +106,7 @@ export default function HiringModels() {
 
                 {plan.popular && (
                   <div style={{
-                    position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)',
+                    position: 'absolute', top: 5, left: '50%', transform: 'translateX(-50%)',
                     background: 'linear-gradient(90deg,#3b82f6,#8b5cf6,#f97316)',
                     color: '#fff', fontSize: '0.7rem', fontWeight: 700,
                     letterSpacing: 1.2, textTransform: 'uppercase',
