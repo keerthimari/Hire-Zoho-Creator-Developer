@@ -19,7 +19,7 @@ A modern, premium iteration of the ZoFlowX website built on Next.js 14 (App Rout
 
 **Identity preserved** (no redesign):
 - Same color palette (cream `#faf9f7`, navy `#0f172a`, primary blue `#1a56db`, tri-color gradient blue → purple → orange)
-- Same fonts (Plus Jakarta Sans + Inter)
+- Same fonts (inter + Inter)
 - Same Navbar with Zoho Authorized Partner badge & WhatsApp button
 - Same Bootstrap 5 + inline-styles coding pattern
 - Same Footer skeleton

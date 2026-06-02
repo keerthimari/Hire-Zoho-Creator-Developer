@@ -76,7 +76,7 @@ export default function Consultation() {
             </span>
 
             <h2 style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif',
+              fontFamily: 'inter,sans-serif',
               fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 800,
               color: '#fff', marginBottom: 20, letterSpacing: '-0.6px', lineHeight: 1.12,
             }}>
@@ -103,7 +103,7 @@ export default function Consultation() {
                     <i className={`bi ${p.icon}`} style={{ color: '#fbbf24', fontSize: '1.05rem' }} />
                   </div>
                   <div>
-                    <div style={{ color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.95rem', marginBottom: 3 }}>{p.title}</div>
+                    <div style={{ color: '#fff', fontFamily: 'inter,sans-serif', fontWeight: 700, fontSize: '0.95rem', marginBottom: 3 }}>{p.title}</div>
                     <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', fontFamily: 'Inter,sans-serif', lineHeight: 1.55 }}>{p.desc}</div>
                   </div>
                 </div>
@@ -116,11 +116,11 @@ export default function Consultation() {
                 width: 56, height: 56, borderRadius: '50%',
                 background: 'linear-gradient(135deg,#1a56db,#3b82f6)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, color: '#fff', fontSize: '1.05rem',
+                fontFamily: 'inter,sans-serif', fontWeight: 800, color: '#fff', fontSize: '1.05rem',
                 flexShrink: 0, boxShadow: '0 6px 18px rgba(26,86,219,0.4)',
               }}>AR</div>
               <div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, color: '#fff', fontSize: '0.98rem' }}>Arul Raj</div>
+                <div style={{ fontFamily: 'inter,sans-serif', fontWeight: 700, color: '#fff', fontSize: '0.98rem' }}>Arul Raj</div>
                 <div style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.55)', marginTop: 2, fontFamily: 'Inter,sans-serif' }}>Founder · 14+ years Zoho & CRM · ex-Oracle, ex-Infosys</div>
                 <div style={{ fontSize: '0.82rem', color: 'rgba(255,255,255,0.7)', marginTop: 6, fontStyle: 'italic', fontFamily: 'Inter,sans-serif', lineHeight: 1.5 }}>"I'll personally review your requirements and recommend the fastest path to ROI."</div>
               </div>
@@ -138,7 +138,7 @@ export default function Consultation() {
               }} />
 
               <h3 style={{
-                fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '1.5rem', fontWeight: 800,
+                fontFamily: 'inter,sans-serif', fontSize: '1.5rem', fontWeight: 800,
                 color: '#0f172a', marginBottom: 6, letterSpacing: '-0.3px',
               }}>Pick a way to start</h3>
               <p style={{ fontSize: '0.88rem', color: '#64748b', marginBottom: 28, fontFamily: 'Inter,sans-serif' }}>
@@ -184,7 +184,7 @@ export default function Consultation() {
                       <i className={`bi ${opt.icon}`} style={{ fontSize: '1.25rem', color: opt.color }} />
                     </div>
                     <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.94rem', color: '#0f172a', marginBottom: 3 }}>{opt.title}</div>
+                      <div style={{ fontFamily: 'inter,sans-serif', fontWeight: 700, fontSize: '0.94rem', color: '#0f172a', marginBottom: 3 }}>{opt.title}</div>
                       <div style={{ fontFamily: 'Inter,sans-serif', fontSize: '0.78rem', color: '#64748b' }}>{opt.sub}</div>
                     </div>
                     <i className="bi bi-arrow-right opt-arrow" style={{ fontSize: '1.05rem', color: '#94a3b8', transition: 'all 0.3s ease', flexShrink: 0 }} />

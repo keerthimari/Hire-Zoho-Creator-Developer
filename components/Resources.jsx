@@ -44,11 +44,24 @@ export default function Resources() {
         <div className="row align-items-end mb-5 fade-up">
           <div className="col-lg-8">
             <span className="section-label">Resources</span>
-            <h2 className="section-title">Zoho insights & <span className="grad-blue-purple">expert resources</span></h2>
+            <h2 className="section-title">Zoho insights & <span className="grad-purple-orange">expert resources</span></h2>
             <p className="section-sub">Stay ahead with the latest Zoho tips, tutorials, and expert resources from India's trusted Zoho Partner.</p>
           </div>
           <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="#" className="btn-outline-custom">View All Articles <i className="bi bi-arrow-right" /></a>
+            <a href="https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="" style={{
+              background: '#ef2f2f',
+              color: '#ffffff',
+              borderRadius: 12,
+              padding: '0.9rem 2rem',
+              fontFamily: 'Inter,sans-serif',
+              fontWeight: 700,
+              fontSize: '0.95rem',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+            }} >View All Articles <i className="bi bi-arrow-right" /></a>
           </div>
         </div>
 
@@ -99,7 +112,7 @@ export default function Resources() {
 
                   <h3 style={{
                     fontSize: '1.05rem', fontWeight: 700, color: '#0f172a',
-                    marginBottom: 12, lineHeight: 1.35, fontFamily: 'Plus Jakarta Sans,sans-serif',
+                    marginBottom: 12, lineHeight: 1.35, fontFamily: 'inter,sans-serif',
                   }}>{a.title}</h3>
 
                   <p style={{ fontSize: '0.88rem', color: '#64748b', lineHeight: 1.65, marginBottom: 22, flex: 1 }}>{a.desc}</p>
@@ -108,7 +121,7 @@ export default function Resources() {
                     <span style={{ fontSize: '0.78rem', color: '#94a3b8', fontFamily: 'Inter,sans-serif', display: 'flex', alignItems: 'center', gap: 6 }}>
                       <i className="bi bi-clock" /> {a.read}
                     </span>
-                    <span className="res-arrow" style={{ fontSize: '0.88rem', fontWeight: 700, color: '#94a3b8', display: 'flex', alignItems: 'center', gap: 6, transition: 'all 0.3s ease', fontFamily: 'Plus Jakarta Sans,sans-serif' }}>
+                    <span className="res-arrow" style={{ fontSize: '0.88rem', fontWeight: 700, color: '#94a3b8', display: 'flex', alignItems: 'center', gap: 6, transition: 'all 0.3s ease', fontFamily: 'inter,sans-serif' }}>
                       Read <i className="bi bi-arrow-right" />
                     </span>
                   </div>

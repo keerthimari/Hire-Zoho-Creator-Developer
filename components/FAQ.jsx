@@ -39,7 +39,7 @@ export default function FAQ() {
       <div className="container">
         <div className="text-center mb-5 fade-up" style={{ maxWidth: 720, margin: '0 auto 56px' }}>
           <span className="section-label">FAQ</span>
-          <h2 className="section-title">The questions clients <span className="grad-blue-purple">actually ask</span> before hiring us</h2>
+          <h2 className="section-title">The questions clients <span className="grad-purple-orange">actually ask</span> before hiring us</h2>
           <p className="section-sub mx-auto">Need clarity before booking the call? Here are the nine we hear most often.</p>
         </div>
 
@@ -61,7 +61,7 @@ export default function FAQ() {
                         width: '100%', textAlign: 'left',
                         background: isOpen ? '#eff6ff' : '#fff',
                         border: 'none', padding: '22px 26px',
-                        fontFamily: 'Plus Jakarta Sans,sans-serif',
+                        fontFamily: 'inter,sans-serif',
                         fontWeight: 600, fontSize: '0.96rem',
                         color: isOpen ? '#1a56db' : '#0f172a',
                         cursor: 'pointer', display: 'flex',
@@ -101,7 +101,7 @@ export default function FAQ() {
 
             {/* Related pages */}
             <div className="fade-up" style={{ marginTop: 44 }}>
-              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#0f172a', marginBottom: 18, fontFamily: 'Plus Jakarta Sans,sans-serif' }}>Related Pages</h4>
+              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#0f172a', marginBottom: 18, fontFamily: 'inter,sans-serif' }}>Related Pages</h4>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                 {['Zoho Analytics Dashboard Customization', 'Zoho CRM Customization', 'Hire Zoho Developer'].map(page => (
                   <a key={page} href="#"

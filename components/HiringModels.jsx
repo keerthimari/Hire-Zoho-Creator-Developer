@@ -73,7 +73,7 @@ export default function HiringModels() {
       <div className="container position-relative">
         <div className="text-center mb-5 fade-up" style={{ maxWidth: 780, margin: '0 auto 60px' }}>
           <span className="section-label">How to Hire Us</span>
-          <h2 className="section-title">Three ways to bring on a <span className="grad-blue-purple">Zoho Creator partner</span></h2>
+          <h2 className="section-title">Three ways to bring on a <span className="grad-purple-orange">Zoho Creator partner</span></h2>
           <p className="section-sub mx-auto">Pick the engagement that fits your budget, timeline, and roadmap. Switch between models as your needs evolve.</p>
         </div>
 
@@ -132,7 +132,7 @@ export default function HiringModels() {
                 }}>{plan.type}</div>
 
                 <div style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  fontFamily: 'inter,sans-serif',
                   fontSize: '2.6rem', fontWeight: 800,
                   color: plan.featured ? '#fff' : '#0f172a',
                   lineHeight: 1, marginBottom: 4, letterSpacing: '-1px',
@@ -178,12 +178,12 @@ export default function HiringModels() {
                 </ul>
 
                 {plan.featured
-                  ? <a href="#consultation" className="btn-gradient" style={{ width: '100%', justifyContent: 'center', padding: '0.85rem' }}>{plan.cta} <i className="bi bi-arrow-right" /></a>
+                  ? <a href="#consultation" className="btn-gradient" style={{ width: '100%', justifyContent: 'center', padding: '0.85rem', background: 'red' }}>{plan.cta} <i className="bi bi-arrow-right" /></a>
                   : <a href="#consultation" style={{
                       background: 'transparent', color: '#0f172a',
                       border: '2px solid #e8e3dd', borderRadius: 12,
                       padding: '0.78rem 1.5rem',
-                      fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.88rem',
+                      fontFamily: 'inter,sans-serif', fontWeight: 700, fontSize: '0.88rem',
                       display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                       textDecoration: 'none', width: '100%',
                       transition: 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)',

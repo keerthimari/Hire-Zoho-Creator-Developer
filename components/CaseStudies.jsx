@@ -56,11 +56,25 @@ export default function CaseStudies() {
         <div className="row align-items-end mb-5 fade-up">
           <div className="col-lg-8">
             <span className="section-label">Proof</span>
-            <h2 className="section-title">What a <span className="grad-blue-purple">real</span> Zoho Creator partnership looks like</h2>
+            <h2 className="section-title">What a <span className="grad-purple-orange">real</span> Zoho Creator partnership looks like</h2>
             <p className="section-sub">Real implementations. Real outcomes. Three Creator engagements that replaced spreadsheets, retired legacy systems, and shipped to production in weeks.</p>
           </div>
           <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="#" className="btn-outline-custom">Read More Case Studies <i className="bi bi-arrow-right" /></a>
+            <a href="#" className="btn-outline-custom" style={{
+              background: '#ef2f2f',
+              color: '#ffffff',
+              borderRadius: 12,
+              border: 'none',
+              padding: '0.9rem 2rem',
+              fontFamily: 'Inter,sans-serif',
+              fontWeight: 700,
+              fontSize: '0.95rem',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              // boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+            }} >Read More Case Studies <i className="bi bi-arrow-right" /></a>
           </div>
         </div>
 
@@ -90,7 +104,7 @@ export default function CaseStudies() {
                       <i className={`bi ${c.icon}`} style={{ fontSize: '0.85rem' }} />
                       <span style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '1.2px', textTransform: 'uppercase' }}>{c.industry}</span>
                     </div>
-                    <h3 style={{ fontSize: '1.15rem', fontWeight: 700, fontFamily: 'Plus Jakarta Sans,sans-serif', lineHeight: 1.3, color: '#fff' }}>{c.title}</h3>
+                    <h3 style={{ fontSize: '1.15rem', fontWeight: 700, fontFamily: 'inter,sans-serif', lineHeight: 1.3, color: '#fff' }}>{c.title}</h3>
                   </div>
                 </div>
 
@@ -99,7 +113,7 @@ export default function CaseStudies() {
                     {c.metrics.map(m => (
                       <div key={m.label} style={{ flex: '1 1 0', minWidth: 110 }}>
                         <div style={{
-                          fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '1.7rem', fontWeight: 800,
+                          fontFamily: 'inter,sans-serif', fontSize: '1.7rem', fontWeight: 800,
                           background: 'linear-gradient(135deg,#3b82f6,#8b5cf6)',
                           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                           lineHeight: 1, marginBottom: 4,

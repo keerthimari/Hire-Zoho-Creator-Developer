@@ -7,7 +7,7 @@ const services = [
     icon: 'bi-app-indicator',
     title: 'Custom App Development',
     tagline: 'Zoho Creator app development, built around your business logic',
-    desc: "Inventory and order management, inspection workflows, project trackers, or field service apps — we design custom Zoho Creator applications that reflect your team's real-world processes.",
+    desc: "Whether it's inventory and order management, inspection workflows, project trackers, or field service apps, we design custom Zoho Creator applications that reflect your team's real-world processes.",
     bullets: ['Requirement workshops and process mapping', 'Custom forms, reports, dashboards and pages', 'Role-based access and granular permissions', 'Mobile app on the same Creator codebase'],
     cta: 'Build my custom app',
   },
@@ -16,7 +16,7 @@ const services = [
     icon: 'bi-clipboard-data',
     title: 'Implementation & Consulting',
     tagline: "Zoho Creator implementation that doesn't stall in week three",
-    desc: 'A structured rollout: requirement analysis, solution architecture, configuration, UAT, user training and post-launch optimization. No surprises, no abandoned phases.',
+    desc: 'We are experienced Zoho Creator consultants and have a structured rollout process that includes requirement analysis, solution architecture, configuration, UAT, user training and post-launch optimization. No surprises, no abandoned phases.',
     bullets: ['Process study and gap analysis', 'Solution architecture and data modeling', 'UAT scripts, training and adoption plans', 'Hypercare and continuous improvement'],
     cta: 'Plan my rollout',
   },
@@ -34,7 +34,7 @@ const services = [
     icon: 'bi-link-45deg',
     title: 'Integration Services',
     tagline: 'Zoho Creator integration with your full stack',
-    desc: 'We connect Creator to Zoho CRM, Books, Inventory, People, Desk and Analytics — plus payment gateways, third-party APIs, ERPs and external databases.',
+    desc: 'We connect Creator to Zoho CRM, Books, Inventory, People, Desk and Analytics — plus payment gateways, third-party APIs, ERPs and external databases. One source of truth, real-time sync, zero duplicate entry with reliable Zoho platform integration. ',
     bullets: ['Native Zoho-to-Zoho integrations', 'REST API and webhook integrations', 'Razorpay, Stripe, PayPal gateways', 'SAP, Salesforce, HubSpot and ERP bridges'],
     cta: 'Connect my systems',
   },
@@ -101,7 +101,7 @@ function ServiceCard({ service, delay }) {
       >
         <div className="svc-num" style={{
           position: 'absolute', top: 18, right: 24,
-          fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '3rem', fontWeight: 800,
+          fontFamily: 'inter,sans-serif', fontSize: '3rem', fontWeight: 800,
           color: '#f0ece8', lineHeight: 1, transition: 'color 0.4s ease', pointerEvents: 'none',
         }}>{service.num}</div>
 
@@ -114,7 +114,7 @@ function ServiceCard({ service, delay }) {
         </div>
 
         <h3 className="svc-title" style={{
-          fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '1.1rem', fontWeight: 700,
+          fontFamily: 'inter,sans-serif', fontSize: '1.1rem', fontWeight: 700,
           color: '#0f172a', marginBottom: 6, lineHeight: 1.3, transition: 'color 0.4s ease',
         }}>{service.title}</h3>
         <div className="svc-tagline" style={{
@@ -136,7 +136,7 @@ function ServiceCard({ service, delay }) {
         </ul>
 
         <a href="#consultation" className="svc-cta" style={{
-          fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700,
+          fontFamily: 'inter,sans-serif', fontWeight: 700,
           fontSize: '0.84rem', color: '#1a56db', textDecoration: 'none',
           display: 'inline-flex', alignItems: 'center', gap: 6,
           textTransform: 'uppercase', letterSpacing: '0.5px',
@@ -165,11 +165,37 @@ export default function Services() {
         <div className="row align-items-end mb-5 fade-up">
           <div className="col-lg-8">
             <span className="section-label">What We Build</span>
-            <h2 className="section-title">Full-spectrum Zoho Creator services, <span className="grad-blue-purple">end to end</span></h2>
-            <p className="section-sub">From initial workshops to production Deluge, mobile rollouts, and long-term support — six services that cover every stage of a Creator engagement.</p>
+            <h2 className="section-title">Full-spectrum Zoho Creator services, <span className="grad-purple-orange">end to end</span></h2>
+            {/* <p className="section-sub">From initial workshops to production Deluge, mobile rollouts, and long-term support — six services that cover every stage of a Creator engagement.</p> */}
           </div>
           <div className="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="#consultation" className="btn-primary-custom">Hire a Zoho Expert Today <i className="bi bi-arrow-right" /></a>
+            <a href="#https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" style={{
+      background: '#ef2f2f',
+      color: '#ffffff',
+      borderRadius: 12,
+      padding: '0.9rem 2rem',
+      fontFamily: 'Inter,sans-serif',
+      fontWeight: 700,
+      fontSize: '0.95rem',
+      textDecoration: 'none',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 10,
+      boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+      border: 'none',
+      transition: 'all 0.3s ease',
+    }}
+    onMouseEnter={e => {
+      e.currentTarget.style.background = '#dc2626'
+      e.currentTarget.style.transform = 'translateY(-2px)'
+      e.currentTarget.style.boxShadow = '0 16px 30px rgba(239, 47, 47, 0.34)'
+    }}
+    onMouseLeave={e => {
+      e.currentTarget.style.background = '#ef2f2f'
+      e.currentTarget.style.transform = ''
+      e.currentTarget.style.boxShadow = '0 12px 24px rgba(239, 47, 47, 0.24)'
+    }}
+ className="btn-primary-custom">Hire a Zoho Expert Today <i className="bi bi-arrow-right" /></a>
           </div>
         </div>
 
@@ -189,12 +215,37 @@ export default function Services() {
           }} />
           <div style={{ position: 'relative' }}>
             <h4 style={{
-              color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif',
+              color: '#fff', fontFamily: 'inter,sans-serif',
               fontSize: 'clamp(1.2rem, 2.4vw, 1.5rem)', marginBottom: 20, fontWeight: 700,
             }}>
               Got a Zoho problem we haven't listed? Tell us — we'll architect it.
             </h4>
-            <a href="#consultation" className="btn-accent">Hire a Zoho Expert <i className="bi bi-arrow-right" /></a>
+            <a href="https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" style={{
+      background: '#ef2f2f',
+      color: '#ffffff',
+      borderRadius: 12,
+      padding: '0.9rem 2rem',
+      fontFamily: 'Inter,sans-serif',
+      fontWeight: 700,
+      fontSize: '0.95rem',
+      textDecoration: 'none',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 10,
+      boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+      border: 'none',
+      transition: 'all 0.3s ease',
+    }}
+    onMouseEnter={e => {
+      e.currentTarget.style.background = '#dc2626'
+      e.currentTarget.style.transform = 'translateY(-2px)'
+      e.currentTarget.style.boxShadow = '0 16px 30px rgba(239, 47, 47, 0.34)'
+    }}
+    onMouseLeave={e => {
+      e.currentTarget.style.background = '#ef2f2f'
+      e.currentTarget.style.transform = ''
+      e.currentTarget.style.boxShadow = '0 12px 24px rgba(239, 47, 47, 0.24)'
+    }}  className="btn-accent">Hire a Zoho Expert <i className="bi bi-arrow-right" /></a>
           </div>
         </div>
       </div>

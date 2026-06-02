@@ -43,7 +43,7 @@ export default function Footer() {
       <div className="container position-relative">
         <div className="row g-5">
           <div className="col-lg-4">
-            <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '1.6rem', fontWeight: 800, color: '#fff', marginBottom: 10, letterSpacing: '-0.6px' }}>
+            <div style={{ fontFamily: 'inter,sans-serif', fontSize: '1.6rem', fontWeight: 800, color: '#fff', marginBottom: 10, letterSpacing: '-0.6px' }}>
               ZoFlow<span style={{ background: 'linear-gradient(135deg,#3b82f6,#8b5cf6,#f97316)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>X</span>
             </div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 8, padding: '4px 10px', marginBottom: 18 }}>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {sections.map(s => (
             <div className="col-6 col-lg-2" key={s.heading}>
-              <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem', fontWeight: 700, letterSpacing: '1.8px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginBottom: 18 }}>
+              <div style={{ fontFamily: 'inter,sans-serif', fontSize: '0.78rem', fontWeight: 700, letterSpacing: '1.8px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginBottom: 18 }}>
                 {s.heading}
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -93,7 +93,7 @@ export default function Footer() {
           ))}
 
           <div className="col-lg-4">
-            <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem', fontWeight: 700, letterSpacing: '1.8px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginBottom: 18 }}>
+            <div style={{ fontFamily: 'inter,sans-serif', fontSize: '0.78rem', fontWeight: 700, letterSpacing: '1.8px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginBottom: 18 }}>
               Contact
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -129,7 +129,7 @@ export default function Footer() {
                 background: '#25d366', color: '#fff',
                 padding: '10px 18px', borderRadius: 10,
                 fontSize: '0.88rem', fontWeight: 700,
-                fontFamily: 'Plus Jakarta Sans,sans-serif',
+                fontFamily: 'inter,sans-serif',
                 textDecoration: 'none', marginTop: 12,
                 transition: 'all 0.3s ease',
                 boxShadow: '0 6px 18px rgba(37,211,102,0.3)',

@@ -81,11 +81,11 @@ export default function Testimonials() {
                     width: 48, height: 48, borderRadius: '50%',
                     background: t.color,
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, color: '#fff', fontSize: '1.05rem',
+                    fontFamily: 'inter,sans-serif', fontWeight: 800, color: '#fff', fontSize: '1.05rem',
                     flexShrink: 0, boxShadow: '0 4px 14px rgba(0,0,0,0.1)',
                   }}>{t.initials}</div>
                   <div>
-                    <div style={{ fontWeight: 700, fontSize: '0.92rem', color: '#0f172a', fontFamily: 'Plus Jakarta Sans,sans-serif' }}>{t.name}</div>
+                    <div style={{ fontWeight: 700, fontSize: '0.92rem', color: '#0f172a', fontFamily: 'inter,sans-serif' }}>{t.name}</div>
                     <div style={{ fontSize: '0.78rem', color: '#64748b', fontFamily: 'Inter,sans-serif' }}>{t.role}</div>
                   </div>
                 </div>

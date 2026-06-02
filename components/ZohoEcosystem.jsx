@@ -33,7 +33,7 @@ export default function ZohoEcosystem() {
       <div className="container position-relative">
         <div className="text-center mb-5 fade-up" style={{ maxWidth: 800, margin: '0 auto 56px' }}>
           <span className="section-label">Built for the Zoho Ecosystem</span>
-          <h2 className="section-title">Creator is one piece. <span className="grad-flow-text">We connect them all.</span></h2>
+          <h2 className="section-title">Creator is one piece. <span className="grad-purple-orange">We connect them all.</span></h2>
           <p className="section-sub mx-auto">
             Most Zoho Creator partners stop at Creator. We architect across the entire Zoho One stack and integrate with the third-party tools you already depend on. One unified data layer, real-time sync, zero duplicate entry.
           </p>
@@ -88,7 +88,7 @@ export default function ZohoEcosystem() {
 
                 <div style={{ position: 'relative', zIndex: 1, minWidth: 0 }}>
                   <div style={{
-                    fontFamily: 'Plus Jakarta Sans,sans-serif',
+                    fontFamily: 'inter,sans-serif',
                     fontSize: '0.88rem', fontWeight: 700, color: '#0f172a',
                     lineHeight: 1.2, marginBottom: 3,
                     whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
@@ -117,7 +117,7 @@ export default function ZohoEcosystem() {
         </div>
 
         <div className="text-center fade-up" style={{ marginTop: 48 }}>
-          <a href="#consultation" className="btn-gradient" style={{ padding: '0.85rem 2rem' }}>
+          <a href="https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="btn-gradient" style={{ padding: '0.85rem 2rem', background: 'red' }}>
             Connect My Zoho Apps <i className="bi bi-arrow-right" />
           </a>
         </div>

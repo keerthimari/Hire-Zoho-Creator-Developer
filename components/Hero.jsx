@@ -1,11 +1,37 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
+// const stats = [
+//   { num: 100, suffix: '+', label: 'Workflows Delivered' },
+//   { num: 34, suffix: '', label: 'Industry Verticals' },
+//   { num: 99.7, suffix: '%', label: 'Workflow Uptime', decimal: true },
+//   { num: 14, suffix: '+', label: 'Years Experience' },
+// ]
 const stats = [
-  { num: 100, suffix: '+', label: 'Workflows Delivered' },
-  { num: 34, suffix: '', label: 'Industry Verticals' },
-  { num: 99.7, suffix: '%', label: 'Workflow Uptime', decimal: true },
-  { num: 14, suffix: '+', label: 'Years Experience' },
+  {
+    num: 100, suffix: '+', label: 'Workflows Delivered',
+
+    bar: 'linear-gradient(90deg,#3b82f6,#6366f1)',
+
+  },
+  {
+    num: 34, suffix: '', label: 'Industry Verticals',
+
+    bar: 'linear-gradient(90deg,#8b5cf6,#a855f7)',
+
+  },
+  {
+    num: 99.7, suffix: '%', label: 'Workflow Uptime', decimal: true,
+
+    bar: 'linear-gradient(90deg,#10b981,#059669)',
+
+  },
+  {
+    num: 14, suffix: '+', label: 'Years Experience',
+
+    bar: 'linear-gradient(90deg,#f97316,#ea580c)',
+
+  },
 ]
 
 const zohoProducts = [
@@ -50,14 +76,16 @@ export default function Hero() {
 
   return (
     <section id="hero" style={{
-      background: 'linear-gradient(160deg,#faf9f7 0%,#f0ece8 100%)',
+      background: 'linear-gradient(105deg, #fff9b8 0%, #fff3dc 46%, #f6d5c8 100%)',
       padding: '90px 0 80px',
       position: 'relative',
       overflow: 'hidden',
+      lineHeight: 1.4,
+
     }}>
-      {/* Decorative blobs */}
+      {/* Decorative blobs
       <div className="blob" style={{ width: 420, height: 420, background: 'radial-gradient(circle, rgba(59,130,246,0.18) 0%, transparent 70%)', top: -120, left: -100 }} />
-      <div className="blob" style={{ width: 380, height: 380, background: 'radial-gradient(circle, rgba(249,115,22,0.14) 0%, transparent 70%)', bottom: -150, right: -80, animationDelay: '6s' }} />
+      <div className="blob" style={{ width: 380, height: 380, background: 'radial-gradient(circle, rgba(249,115,22,0.14) 0%, transparent 70%)', bottom: -150, right: -80, animationDelay: '6s' }} /> */}
 
       {/* Subtle grid pattern */}
       <div style={{
@@ -69,8 +97,8 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-     
-    
+
+
 
       <div className="container position-relative text-center">
         {/* Badge */}
@@ -88,33 +116,46 @@ export default function Hero() {
 
         {/* H1 */}
         <h1 style={{
-          fontFamily: 'Plus Jakarta Sans,sans-serif',
-          fontSize: 'clamp(2.3rem, 5.5vw, 4.2rem)',
-          fontWeight: 800, color: '#0f172a',
+          fontFamily: 'inter,sans-serif',
+          // fontSize: 'clamp(2.3rem, 5.5vw, 4.2rem)',
+          fontWeight: 800, color: '#111827',
           marginBottom: 24, letterSpacing: '-1.5px',
           lineHeight: 1.08, maxWidth: 920, margin: '0 auto 24px',
         }}>
           Hire a Zoho Creator partner who{' '}
-          <span className="grad-flow-text">actually ships</span>
+          <span className="grad-purple-orange">actually ships</span>
         </h1>
 
         <p style={{
-          fontSize: '1.1rem', color: '#475569',
+          fontSize: '1.1rem', color: '#374151',
           maxWidth: 720, margin: '0 auto 38px',
           lineHeight: 1.75, fontFamily: 'Inter,sans-serif',
         }}>
-          ZoFlowX helps founders, operators and enterprise teams replace spreadsheets with custom low-code applications built on Zoho Creator, powered by Deluge, and integrated with the whole Zoho suite. <strong style={{ color: '#0f172a' }}>No spinning your wheels. No endless discovery phase.</strong>
+          ZoFlowX is a trusted Zoho partner in India who assists founders, operators and enterprise teams to replace spreadsheets with custom low-code applications built on Zoho Creator, powered by Deluge and integrated with the whole Zoho applications suite
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 56 }}>
-          <a href="#consultation" className="btn-gradient" style={{ padding: '0.9rem 2rem', fontSize: '0.95rem' }}>
+          <a href="https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="btn-gradient" style={{
+            background: '#ef2f2f',
+            color: '#ffffff',
+            borderRadius: 12,
+            padding: '0.9rem 2rem',
+            fontFamily: 'Inter,sans-serif',
+            fontWeight: 700,
+            fontSize: '0.95rem',
+            textDecoration: 'none',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 10,
+            boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+          }}>
             Book My Free Consultation <i className="bi bi-arrow-right" />
           </a>
           <a href="#pricing" style={{
             background: '#fff', color: '#0f172a',
             border: '2px solid #e8e3dd', borderRadius: 12,
             padding: '0.85rem 2rem',
-            fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.95rem',
+            fontFamily: 'inter,sans-serif', fontWeight: 700, fontSize: '0.95rem',
             textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8,
             transition: 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)',
           }}
@@ -135,7 +176,115 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div ref={statsRef} style={{
+        <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 16px' }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            marginBottom: 8,
+          }}>
+            {/* <span style={{ fontSize: 12, color: '#94a3b8', fontFamily: 'Inter,sans-serif', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+      By the numbers
+    </span> */}
+            {/* <span style={{ fontSize: 11, color: '#94a3b8', fontFamily: 'Inter,sans-serif', display: 'flex', alignItems: 'center', gap: 4 }}>
+      <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#10b981', display: 'inline-block' }} />
+      Updated 2025
+    </span> */}
+          </div>
+
+          <div ref={statsRef} style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            background: 'linear-gradient(110deg, #eef6ff 0%, #f8fbff 45%, #fffef0 100%)',
+            border: '1px solid #bfdbfe',
+            borderRadius: 28,
+            overflow: 'hidden',
+            boxShadow: '0 24px 60px rgba(15, 23, 42, 0.06)',
+          }}>
+            {stats.map((s,i) => (
+              <div
+                key={s.label}
+                style={{
+                  background: '#fff',
+                  padding: '24px 16px 20px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: 8,
+                  position: 'relative',
+                  overflow: 'hidden',
+                  transition: 'background 0.2s',
+                }}
+                onMouseEnter={e => e.currentTarget.style.background = '#f8faff'}
+                onMouseLeave={e => e.currentTarget.style.background = '#fff'}
+              >
+                {/* Top accent bar */}
+                <div style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: 3,
+                  background: s.bar,
+                }} />
+
+                {/* Icon */}
+                <div style={{
+                  width: 38, height: 38, borderRadius: 10,
+                  background: s.iconBg, color: s.iconColor,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 18, marginBottom: 2,
+                }}>
+                  {s.icon}
+                </div>
+
+                {/* Number */}
+                <div
+                  className="stat-num"
+                  data-target={s.num}
+                  data-suffix={s.suffix}
+                  data-decimal={s.decimal ? 'true' : 'false'}
+                  style={{
+                    fontFamily: 'inter Sans,sans-serif',
+                    fontSize: 'clamp(1.6rem, 2.5vw, 2.1rem)',
+                    fontWeight: 800,
+                    background: s.bar,
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    lineHeight: 1,
+                    letterSpacing: '-1px',
+                  }}
+                >
+                  0{s.suffix}
+                </div>
+
+                {/* Label */}
+                <div style={{
+                  fontSize: '0.78rem', color: '#64748b',
+                  fontFamily: 'Inter,sans-serif', fontWeight: 500,
+                  textAlign: 'center', lineHeight: 1.4,
+                }}>
+                  {s.label}
+                </div>
+
+                {/* Badge */}
+                <div style={{
+                  fontSize: 10, fontWeight: 600,
+                  padding: '2px 10px', borderRadius: 99,
+                  background: s.badgeBg, color: s.badgeColor,
+                  fontFamily: 'Inter,sans-serif',
+                  marginTop: 2,
+                  letterSpacing: '0.02em',
+                }}>
+                  {s.sub}
+                </div>
+              </div>
+            ))
+            }
+          </div>
+        </div>
+
+
+
+
+
+        {/* Stats */}
+        {/* <div ref={statsRef} style={{
           display: 'flex', justifyContent: 'center', gap: 0, flexWrap: 'wrap',
           padding: '36px 16px', background: '#fff',
           border: '1px solid #e8e3dd', borderRadius: 20,
@@ -148,7 +297,7 @@ export default function Hero() {
             <div key={s.label} style={{ textAlign: 'center', padding: '0 24px', minWidth: 150, flex: '1 1 0', borderLeft: i > 0 ? '1px solid #f0ece8' : 'none' }}>
               <div className="stat-num" data-target={s.num} data-suffix={s.suffix} data-decimal={s.decimal ? 'true' : 'false'}
                 style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: 'clamp(1.7rem, 3vw, 2.2rem)', fontWeight: 800,
+                  fontFamily: 'inter,sans-serif', fontSize: 'clamp(1.7rem, 3vw, 2.2rem)', fontWeight: 800,
                   background: 'linear-gradient(135deg,#3b82f6,#8b5cf6)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                   lineHeight: 1,
@@ -158,7 +307,7 @@ export default function Hero() {
               <div style={{ fontSize: '0.8rem', color: '#64748b', marginTop: 8, fontFamily: 'Inter,sans-serif', fontWeight: 500 }}>{s.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )

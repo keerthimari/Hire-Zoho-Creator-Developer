@@ -6,31 +6,31 @@ const steps = [
     title: 'Discovery Call',
     desc: 'A 45-minute conversation about your processes, your pain points and what success looks like. Free, no obligation, no pre-call homework required.',
     icon: 'bi-chat-dots-fill',
-    duration: '45 min · Free',
+    duration: '',
   },
   {
     title: 'Scoping & Architecture',
     desc: 'We map your data model, define modules, sketch workflows and lock a fixed scope with milestones you can hold us to.',
     icon: 'bi-diagram-3',
-    duration: 'Week 1',
+    duration: '',
   },
   {
     title: 'Build & Iterate',
     desc: 'Weekly demos on your own Creator account. You see progress live, request changes early, and never wait for a "big reveal."',
     icon: 'bi-code-square',
-    duration: 'Weeks 2–5',
+    duration: '',
   },
   {
     title: 'UAT & Training',
     desc: "QA scripts, edge-case testing, role-based training sessions and documentation your team will actually open.",
     icon: 'bi-clipboard-check-fill',
-    duration: 'Week 6',
+    duration: '',
   },
   {
     title: 'Launch & Support',
     desc: "We don't ghost after go-live. Hypercare, optimization and a long-term support tier that fits your roadmap.",
     icon: 'bi-rocket-takeoff-fill',
-    duration: 'Ongoing',
+    duration: '',
   },
 ]
 
@@ -52,7 +52,7 @@ export default function Process() {
         <div className="row align-items-center g-5">
           <div className="col-lg-5 fade-up">
             <span className="section-label">How We Work</span>
-            <h2 className="section-title">Five steps. <span className="grad-blue-purple">Proven process.</span></h2>
+            <h2 className="section-title">Five steps. <span className="grad-purple-orange">Proven process.</span></h2>
             <p className="section-sub" style={{ marginBottom: 28 }}>
               From the first 45-minute discovery call to long-term hypercare, every engagement runs on the same five-step rhythm. You always know what's happening and what's next.
             </p>
@@ -68,7 +68,19 @@ export default function Process() {
               ))}
             </div>
 
-            <a href="#consultation" className="btn-primary-custom">Talk to Our Zoho Developer <i className="bi bi-arrow-right" /></a>
+            <a href="#https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="btn-primary-custom"  style={{ background: '#ef2f2f',
+    color: '#ffffff',
+    borderRadius: 12,
+    padding: '0.9rem 2rem',
+    fontFamily: 'Inter,sans-serif',
+    fontWeight: 700,
+    fontSize: '0.95rem',
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 10,
+    boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+ }}>Talk to Our Zoho Developer <i className="bi bi-arrow-right" /></a>
           </div>
 
           <div className="col-lg-7 fade-up" style={{ transitionDelay: '0.1s' }}>
@@ -102,7 +114,7 @@ export default function Process() {
                   <div className="step-num" style={{
                     width: 54, height: 54, minWidth: 54, background: '#1a56db', borderRadius: 14,
                     display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                    fontFamily: 'Plus Jakarta Sans,sans-serif',
+                    fontFamily: 'inter,sans-serif',
                     color: '#fff', boxShadow: '0 6px 18px rgba(26,86,219,0.3)',
                     transition: 'all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)',
                   }}>
@@ -114,11 +126,11 @@ export default function Process() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 5, flexWrap: 'wrap' }}>
                       <h3 style={{
                         fontSize: '1.05rem', fontWeight: 700, color: '#0f172a',
-                        margin: 0, fontFamily: 'Plus Jakarta Sans,sans-serif',
+                        margin: 0, fontFamily: 'inter,sans-serif',
                       }}>{step.title}</h3>
                       <span style={{
                         fontSize: '0.72rem', fontWeight: 600, padding: '3px 10px',
-                        background: 'rgba(26,86,219,0.1)', color: '#1a56db',
+                        //background: 'rgba(26,86,219,0.1)', color: '#1a56db',
                         borderRadius: 50, fontFamily: 'Inter,sans-serif',
                       }}>{step.duration}</span>
                     </div>

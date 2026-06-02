@@ -111,7 +111,7 @@ export default function Industries() {
 
                 <h3 style={{
                   fontSize: '1.02rem', fontWeight: 700, color: '#0f172a',
-                  marginBottom: 8, fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  marginBottom: 8, fontFamily: 'inter Sans,sans-serif',
                 }}>{ind.title}</h3>
 
                 <div className="ind-line" style={{
@@ -136,11 +136,23 @@ export default function Industries() {
             pointerEvents: 'none',
           }} />
           <div style={{ position: 'relative' }}>
-            <h4 style={{ color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif', marginBottom: 8, fontSize: '1.4rem' }}>Can't find your industry above?</h4>
+            <h4 style={{ color: '#fff', fontFamily: 'inter Sans,sans-serif', marginBottom: 8, fontSize: '1.4rem' }}>Can't find your industry above?</h4>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem', marginBottom: 24, maxWidth: 560, margin: '0 auto 24px' }}>
               We work across all sectors. Tell us your business and we'll architect the right Zoho Creator solution for you.
             </p>
-            <a href="#consultation" className="btn-gradient">Talk to a Zoho Expert <i className="bi bi-arrow-right" /></a>
+            <a href="#https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="btn-gradient" style={{ background: '#ef2f2f',
+    color: '#ffffff',
+    borderRadius: 12,
+    padding: '0.9rem 2rem',
+    fontFamily: 'Inter,sans-serif',
+    fontWeight: 700,
+    fontSize: '0.95rem',
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 10,
+    boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)',
+ }}  >Talk to a Zoho Expert <i className="bi bi-arrow-right" /></a>
           </div>
         </div>
       </div>

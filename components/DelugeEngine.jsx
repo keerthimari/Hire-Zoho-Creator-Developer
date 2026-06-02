@@ -44,13 +44,14 @@ export default function DelugeEngine() {
 
   return (
     <section id="deluge-engine" style={{
-      background: 'linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%)',
-      color: '#fff', position: 'relative', overflow: 'hidden', padding: '100px 0',
+      //background: 'linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%)',
+      background: 'linear-gradient(115deg, #eff6ff 0%, #fffbe7 52%, #f8e1d6 100%)',
+      color: '#0f172a', position: 'relative', overflow: 'hidden', padding: '100px 0',
     }} ref={ref}>
       {/* Background ambient */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse at 20% 50%, rgba(99,179,237,0.18) 0%, transparent 60%), radial-gradient(ellipse at 85% 30%, rgba(249,115,22,0.10) 0%, transparent 55%)',
+        background: 'linear-gradient(115deg, #eff6ff 0%, #fffbe7 52%, #f8e1d6 100%)',
         pointerEvents: 'none',
       }} />
 
@@ -75,33 +76,48 @@ export default function DelugeEngine() {
             </span>
 
             <h2 style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif',
+              fontFamily: 'inter,sans-serif',
               fontSize: 'clamp(1.9rem, 4vw, 2.8rem)', fontWeight: 800,
-              color: '#fff', marginBottom: 22, letterSpacing: '-0.8px', lineHeight: 1.12,
+              color: '#0d0d0d', marginBottom: 22, letterSpacing: '-0.8px', lineHeight: 1.12,
             }}>
               Where most agencies stop, <br />
               <span style={{
-                background: 'linear-gradient(90deg,#fbbf24,#f97316,#ef4444)',
+                background: 'linear-gradient(90deg, #8b5cf6, #f97316)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
               }}>we're just getting started.</span>
             </h2>
 
             <p style={{
-              color: 'rgba(255,255,255,0.78)', fontSize: '1.02rem',
+              color: '#334155', fontSize: '1.02rem',
               marginBottom: 20, lineHeight: 1.75, maxWidth: 580,
               fontFamily: 'Inter,sans-serif',
             }}>
-              Drag and drop will take you 60% of the way. The last 40% — the part that decides whether your app actually works in production — is <strong style={{ color: '#fff' }}>Deluge</strong>.
+              Drag and drop will take you 60% of the way. The last 40%  the part that decides whether your app actually works in production  is <strong style={{ background: 'linear-gradient(90deg, #8b5cf6, #f97316)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}>Deluge</strong>.
             </p>
             <p style={{
-              color: 'rgba(255,255,255,0.65)', fontSize: '0.95rem',
+              color: '#334155', fontSize: '0.95rem',
               marginBottom: 32, lineHeight: 1.75, maxWidth: 580,
               fontFamily: 'Inter,sans-serif',
             }}>
-              Our engineers write modular, testable Deluge scripts that handle complex business logic, third-party API calls, scheduled jobs and edge cases — without falling over.
+              Our engineers write modular, testable Deluge scripts that handle complex business logic, third-party API calls, scheduled jobs and edge cases without falling over.
             </p>
 
-            <a href="#consultation" className="btn-gradient" style={{ padding: '0.85rem 2rem' }}>
+            <a href="https://arul-zoflowx.zohobookings.in/#/Zoho_Consultation?utm_source=website&utm_medium=talktoexpertcta&utm_campaign=zoflowweb" className="btn-gradient" style={{ background: '#ef2f2f',
+              color: '#ffffff',
+              borderRadius: 12,
+              padding: '0.9rem 2rem',
+              fontFamily: 'Inter,sans-serif',
+              fontWeight: 700,
+              fontSize: '0.95rem',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 10,
+              boxShadow: '0 12px 24px rgba(239, 47, 47, 0.24)', }}>
               Get Production-Grade Deluge <i className="bi bi-arrow-right" />
             </a>
           </div>
@@ -158,7 +174,7 @@ export default function DelugeEngine() {
                 <div>
                   <div className="de-stat-num" data-target={s.num} data-suffix={s.suffix} data-decimal={s.decimal ? 'true' : 'false'}
                     style={{
-                      fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '2.1rem',
+                      fontFamily: 'inter,sans-serif', fontSize: '2.1rem',
                       fontWeight: 800, color: '#fff', lineHeight: 1, marginBottom: 4,
                     }}>0{s.suffix}</div>
                   <div style={{
