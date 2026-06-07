@@ -1,53 +1,68 @@
-# ZoFlowX v3
+# Zoho Customization Service — ZoFlowX
 
-A modern, premium iteration of the ZoFlowX website built on Next.js 14 (App Router). Same brand identity as v2 — refreshed content and polished interactions.
+A Next.js 14 landing page for **Zoho Customization Services** by ZoFlowX.
 
-## What changed from v2
+> **URL:** `/zoho-customization-services`
+> **SEO Title:** Zoho Customization Services | Certified Zoho Partner India
 
-**Content** (full rewrite around the "Zoho Creator partner who actually ships" positioning):
-- New hero with the Zoho Creator partner positioning
-- New "The Why" section — 4 problem cards instead of 6 generic reasons
-- New "Why ZoFlowX" — 6 differentiators (Authorized Partner, Deluge Specialists, Ship in Weeks, End-to-End coverage, Mobile-Ready, Transparent)
-- "What We Build" services rebuilt around 6 service pillars (Custom App Development, Implementation, Workflow Automation, Integration, Customization & Migration, Ongoing Support)
-- New "Deluge · The Engine Room" section with live code snippet and stats (100+ workflows, 99.7% uptime, 34 verticals)
-- New "How We Work" 5-step process (Discovery → Scoping → Build → UAT → Launch)
-- "How to Hire Us" — three engagement models (Fixed Scope, Dedicated Hire, On-Demand)
-- New "Zoho Ecosystem" section — 12-app grid showing the full Zoho One coverage
-- Updated FAQ with the 9 new questions
-- Updated footer with Tirunelveli & Chennai office references
-- "Let's replace your spreadsheets" consultation CTA
+---
 
-**Identity preserved** (no redesign):
-- Same color palette (cream `#faf9f7`, navy `#0f172a`, primary blue `#1a56db`, tri-color gradient blue → purple → orange)
-- Same fonts (inter + Inter)
-- Same Navbar with Zoho Authorized Partner badge & WhatsApp button
-- Same Bootstrap 5 + inline-styles coding pattern
-- Same Footer skeleton
-
-**Polish added**:
-- Animated gradient text (`grad-flow-text`) for hero & key headlines
-- Refined hover effects — micro-rotations, gradient backgrounds on cards, animated icons
-- Decorative floating "blobs" and grid backgrounds in hero/dark sections
-- Backdrop-blur navbar when scrolled
-- Smoother `cubic-bezier` easings across all transitions
-- Number count-up animations on the hero & Deluge stats
-- Improved scrollbar styling
-- Better mobile menu animation
-- Reduced-motion respected
-- `:focus-visible` for accessibility
-
-## Run
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000 — redirects to /hire-zoho-developer.
+Open http://localhost:3000
 
-## Stack
+## Build
 
-- Next.js 14.2 (App Router)
-- React 18
-- Bootstrap 5.3 + Bootstrap Icons
-- No CSS-in-JS / Tailwind — pure CSS variables + inline styles (same pattern as v2)
+```bash
+npm run build
+npm start
+```
+
+## Structure
+
+```
+app/
+  layout.js          — root layout + global styles + bootstrap-icons
+  page.js            — the page (all 16 sections wired up)
+
+components/          — one component per section
+  Navbar.jsx
+  Hero.jsx           — S1: H1 + stats + reviewer-avatar star ratings + 5 action chips (Call/WhatsApp/Email/Schedule/Live Chat)
+  TrustedBrands.jsx  — S2: "Out-of-the-box Zoho is powerful…" + brand marquee
+  Journey.jsx        — S11: ZoFlowX vs DIY vs generic vendors comparison
+  Problem.jsx        — S3: 6 signs your business needs Zoho customization
+  Services.jsx       — S5: 10 end-to-end Zoho customization services
+  ZohoProducts.jsx   — S6: 40+ Zoho apps, tabbed by 4 categories
+  DeveloperHire.jsx  — S7: Our Approach (5 principles)
+  Process.jsx        — S8: 6-step customization process
+  WhyUs.jsx          — S9: 5 reasons + by-the-numbers card
+  CustomBuild.jsx    — S10: Engagement models (Starter / Growth / Enterprise)
+  CaseStudies.jsx    — S12: 3 real outcomes (Image Star · Brite Decking · CoWorkFlowX)
+  Industries.jsx     — S4: 8 industries + WhatsApp CTA
+  Testimonials.jsx   — S13: 6 client voices
+  DiscoveryCall.jsx  — S15: Senior architect on call (Arul Raj founder card)
+  Resources.jsx      — S14: Zoho insights & resources
+  Contact.jsx        — Contact form + channels
+  FAQ.jsx            — S16: 11 FAQs + Related Pages
+  Footer.jsx         — Footer with cities, services, related pages
+  LogoMark.jsx       — ZoFlowX tri-color X mark
+  ScrollTop.jsx      — Floating scroll-to-top button
+
+styles/
+  globals.css        — design tokens, utilities, animations
+```
+
+## Design system
+
+Tri-color identity from the ZoFlowX "X" logo:
+
+- Blue   `#2563eb`
+- Red    `#dc2626`
+- Yellow `#f59e0b`
+
+Fonts: inter Sans (display), Inter (body) — loaded via Google Fonts.
